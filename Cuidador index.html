@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cuidador Legado Invicto — Enfermería y Atención Profesional</title>
+    <meta name="description" content="Cuidador Legado Invicto — Formación técnica en enfermería. Atención profesional, personalizada y cercana. Cuidado con dignidad, experiencia y compromiso.">
+    <meta name="keywords" content="Cuidador Legado Invicto, cuidador, enfermería, técnico, atención domiciliaria, acompañamiento, adulto mayor">
+    <meta name="robots" content="index, follow">
+    
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body {
+            background: linear-gradient(135deg, #e6f2ff, #f0f8ff);
+            color: #2c3e50;
+            line-height: 1.7;
+            padding: 20px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            padding: 30px 20px;
+            background: #fff;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+            margin-bottom: 30px;
+        }
+        h1 { color: #006699; font-size: 1.8rem; margin-bottom: 10px; }
+        .subtitulo { color: #27ae60; font-weight: 600; font-size: 1.1rem; }
+        .boton-voz {
+            display: inline-flex; align-items: center; gap: 10px;
+            background: linear-gradient(135deg, #0099cc, #006699);
+            color: white; border: none; padding: 14px 28px;
+            font-size: 1.1rem; border-radius: 50px; cursor: pointer;
+            margin: 20px 0; box-shadow: 0 4px 10px rgba(0,102,153,0.3);
+            transition: all 0.3s ease;
+        }
+        .boton-voz:hover { transform: translateY(-2px); box-shadow: 0 6px 14px rgba(0,102,153,0.4); }
+        .boton-voz.pausado { background: linear-gradient(135deg, #e67e22, #d35400); }
+        .seccion {
+            background: white; padding: 25px; border-radius: 14px;
+            margin-bottom: 20px; box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+        }
+        h2 { color: #006699; margin-bottom: 15px; font-size: 1.3rem; border-left: 4px solid #27ae60; padding-left: 12px; }
+        ul { padding-left: 25px; }
+        li { margin-bottom: 10px; }
+        .resumen {
+            background: #e8f5e9; border-left: 5px solid #27ae60;
+            padding: 20px; border-radius: 10px;
+            font-style: italic; font-weight: 500;
+        }
+        .estado-voz { margin-top: -10px; margin-bottom: 15px; color: #555; font-size: 0.95rem; }
+        .imagen-seccion {
+            width: 100%; height: auto; object-fit: cover;
+            border-radius: 12px; margin: 15px 0;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        .imagen-principal {
+            width: 100%; max-width: 550px; border-radius: 14px;
+            margin: 20px auto; display: block;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+        .seccion-contacto {
+            background: linear-gradient(135deg, #128C7E, #25D366);
+            color: white; text-align: center; padding: 35px 25px;
+            border-radius: 14px; margin-top: 10px;
+        }
+        .seccion-contacto h2 { color: white; border: none; padding: 0; font-size: 1.5rem; margin-bottom: 15px; }
+        .boton-whatsapp {
+            display: inline-flex; align-items: center; gap: 12px;
+            background: white; color: #128C7E; font-size: 1.3rem; font-weight: bold;
+            text-decoration: none; padding: 15px 30px; border-radius: 50px;
+            margin: 20px 0; box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+            transition: transform 0.3s ease;
+        }
+        .boton-whatsapp:hover { transform: scale(1.05); }
+        .icono-whatsapp { font-size: 1.8rem; }
+        .texto-contacto { font-size: 1.05rem; opacity: 0.95; }
+        .marca { color: #d35400; font-weight: bold; font-size: 1.2rem; }
+        .foto-trabajo { border: 3px solid #27ae60; }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>🩺 Cuidador <span class="marca">Legado Invicto</span></h1>
+    <p class="subtitulo">Formación Técnica en Enfermería · Atención con dignidad y compromiso</p>
+    
+    <img src= Foto uno comida paciente
+         alt="Cuidador Legado Invicto — Acompañamiento y alimentación con respeto y cariño" 
+         class="imagen-principal foto-trabajo">
+    
+    <button class="boton-voz" id="btnVoz" onclick="reproducirTodo()">
+        🔊 Escuchar explicación completa
+    </button>
+    <p class="estado-voz" id="estadoVoz">Voz clara y cercana ✨</p>
+</header>
+
+<section class="seccion">
+    <h2>¿Quién soy?</h2>
+    <p>
+        Soy <strong>Cuidador Legado Invicto</strong>, con formación técnica en enfermería. Brindo atención profesional, cercana y responsable a personas mayores, enfermas o quienes requieren acompañamiento. Mi nombre representa compromiso: cuidar con honor, conocimientos y corazón.
+    </p>
+</section>
+
+<section class="seccion">
+    <h2>Atención y cuidados personales</h2>
+    
+    <img src=Foto 2 apoyo de alimentacion 
+         alt="Apoyo en la alimentación con paciencia, respeto y cercanía" 
+         class="imagen-seccion foto-trabajo">
+    
+    <ul>
+        <li>Ayuda con baño, aseo, vestimenta y arreglo personal</li>
+        <li>Apoyo completo en la alimentación y en la ingesta de alimentos con paciencia y respeto</li>
+        <li>Cuidado de higiene bucal, uso del baño y cambio de ropa</li>
+        <li>Movilización y cambios de postura para evitar llagas y molestias</li>
+    </ul>
+</section>
+
+<section class="seccion">
+    <h2>Apoyo en salud — Con base técnica 💊</h2>
+    <ul>
+        <li>✅ Formación: Enfermería Nivel Técnico</li>
+        <li>Administración correcta de medicamentos: horario, dosis y vía</li>
+        <li>Control y vigilancia de signos vitales y estado general</li>
+        <li>Acompañamiento y apoyo en citas y procedimientos médicos</li>
+        <li>Realización de curaciones y cuidados técnicos según indicación</li>
+        <li>Detección oportuna de señales de alerta y comunicación inmediata</li>
+        <li>Cumplimiento estricto de indicaciones médicas y planes de cuidado</li>
+    </ul>
+</section>
+
+<section class="seccion">
+    <h2>Bienestar emocional y compañía 🫂</h2>
+    <ul>
+        <li>Escucha, compañía y trato cálido y respetuoso</li>
+        <li>Prevención del aislamiento y la soledad</li>
+        <li>Rutinas agradables: lecturas, música, paseos, actividades ligeras</li>
+        <li>Apoyo en momentos de ansiedad, tristeza o confusión</li>
+        <li>Respeto total a gustos, costumbres y decisiones de la persona</li>
+    </ul>
+</section>
+
+<section class="seccion">
+    <h2>Comunicación y coordinación con la familia</h2>
+    <ul>
+        <li>Informes claros y frecuentes a la familia sobre el estado de salud</li>
+        <li>Registro diario: medicamentos, comidas, novedades importantes</li>
+        <li>Trabajo en coordinación con médicos, enfermeras y terapeutas</li>
+        <li>Comunicación empática y respetuosa con la persona y su entorno</li>
+    </ul>
+</section>
+
+<section class="seccion">
+    <h2>💛 En resumen</h2>
+    <p class="resumen">
+        Soy <strong>Legado Invicto</strong>: cuido con dignidad, conocimientos técnicos y lealtad. Mi trabajo se basa en el respeto a la persona, su bienestar y su familia. Tu tranquilidad y la salud de quienes amas son mi compromiso.
+    </p>
+</section>
+
+<section class="seccion-contacto">
+    <h2>💬 ¿Te interesa? Hablemos</h2>
+    <p class="texto-contacto">Toca el botón y vamos directo a WhatsApp<br>Informes, disponibilidad y tarifas</p>
+    
+    <a href="https://wa.me/525657589039?text=Hola,%20busco%20al%20Cuidador%20Legado%20Invicto%20y%20quisiera%20informes" 
+       target="_blank" 
+       class="boton-whatsapp">
+        <span class="icono-whatsapp">💬</span>
+        <span>Enviar mensaje</span>
+    </a>
+    
+    <p style="font-size: 0.9rem; opacity: 0.85; margin-top: 10px;">
+        Se abre el chat listo para escribir ✅<br>
+        Respondo lo antes posible 📲
+    </p>
+</section>
+
+<script>
+let vozActiva = false;
+let narrador = window.speechSynthesis;
+
+function obtenerVoz() {
+    const voces = narrador.getVoices();
+    return voces.find(v => v.lang.includes('es-MX')) || voces.find(v => v.lang.startsWith('es')) || voces[0];
+}
+
+function reproducirTodo() {
+    if (vozActiva) {
+        narrador.cancel();
+        vozActiva = false;
+        document.getElementById('btnVoz').classList.remove('pausado');
+        document.getElementById('btnVoz').innerHTML = '🔊 Escuchar explicación completa';
+        return;
+    }
+
+    const textoCompleto = `
+        Soy Cuidador Legado Invicto, con formación técnica en enfermería.
+        Mi nombre representa compromiso: cuidar con honor, conocimientos y corazón.
+        
+        Atención y cuidados personales:
+        Ayudo con baño, aseo, vestimenta, alimentación con paciencia, higiene y movilización.
+        
+        Apoyo en salud:
+        Formación en Enfermería Nivel Técnico.
+        Administro medicamentos, vigilo signos vitales, acompaño en citas, realizo curaciones y detecto señales de alerta.
+        Sigo estrictamente las indicaciones médicas.
+        
+        Bienestar emocional y compañía:
+        Escucha, calidez, actividades agradables, apoyo en ansiedad y respeto total a la persona.
+        
+        Comunicación y coordinación:
+        Informes a la familia, registro diario, trabajo en equipo con médicos y trato empático.
+        
+        Soy Legado Invicto: cuido con dignidad, conocimientos y lealtad.
+        Si te interesa, escríbeme por WhatsApp. Estoy para servirte.
+    `;
+
+    const mensaje = new SpeechSynthesisUtterance(textoCompleto);
+    mensaje.voice = obtenerVoz();
+    mensaje.lang = 'es-MX';
+    mensaje.rate = 0.95;
+    mensaje.pitch = 1.05;
+
+    mensaje.onstart = () => {
+        vozActiva = true;
+        document.getElementById('btnVoz').classList.add('pausado');
+        document.getElementById('btnVoz').innerHTML = '🔇 Detener reproducción';
+    };
+
+    mensaje.onend = () => {
+        vozActiva = false;
+        document.getElementById('btnVoz').classList.remove('pausado');
+        document.getElementById('btnVoz').innerHTML = '🔊 Escuchar explicación completa';
+    };
+
+    narrador.speak(mensaje);
+}
+</script>
+
+</body>
+</html>
